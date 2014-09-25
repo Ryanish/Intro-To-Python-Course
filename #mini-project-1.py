@@ -1,5 +1,20 @@
-#mini-project 1
-import random
+# Rock-paper-scissors-lizard-Spock template
+
+# The key idea of this program is to equate the strings
+# "rock", "paper", "scissors", "lizard", "Spock" to numbers
+# as follows:
+#
+# 0 - rock
+# 1 - Spock
+# 2 - paper
+# 3 - lizard
+# 4 - scissors
+
+# imported math function:
+
+from random import randrange
+
+# helper functions
 
 def name_to_number(name):
     if name == "rock":
@@ -12,8 +27,8 @@ def name_to_number(name):
         return 3
     elif name == "scissors":
         return 4
-     else:
-     	print "This is not an option - try again"
+    else:
+        return "That is not an option - try again"
 
 def number_to_name(number):
     if number == 0:
@@ -27,27 +42,35 @@ def number_to_name(number):
     elif number == 4:
         return "scissors"
     else:
-        print "This is not an option - try again"
+        return "That is not an option - try again"
+
 
 
 def rpsls(player_choice):
-	print " "
-	print "Player chooses" + player_choice
-	name_to_number(player_choice)
+    print " "
+    print "Player chooses " + player_choice
+    name_to_number(player_choice)
 # compute random guess for comp_number using random.randrange()
-def	comp_number = random.randrange(0,4)
-# convert comp_number to comp_choice using the function number_to_name()
-def comp_choice = comp_number(number_to_name())
-# print out the message for computer's choice
-print comp_choice()
-# compute difference of comp_number and player_number modulo five
-comp_number % player_number 5
-# use if/elif/else to determine winner, print winner message
+    comp_number = randrange(0, 5)
 
-if 
+# convert comp_number to comp_choice using the function number_to_name()
+    comp_choice = number_to_name(comp_number)
+
+# print out the message for computer's choice
+    print "Computer chooses " + comp_choice
+# compute difference of comp_number and player_number modulo five
+    difference = (name_to_number(player_choice) - comp_number) % 5
+# use if/elif/else to determine winner, print winner message
+    if difference == 0:
+        result = "Player and computer tie!"
+    elif difference == 1 or difference == 2:
+        result = "Player wins!"
+    else:
+        result = "Computer wins!"
 
 rpsls("rock")
 rpsls("Spock")
 rpsls("paper")
 rpsls("lizard")
 rpsls("scissors")    
+
