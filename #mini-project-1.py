@@ -29,24 +29,20 @@ def number_to_name(number):
     else:
         print "This is not an option - try again"
 
-Then compute the number player_number between 0 and 4 corresponding to the player's choice by calling the helper function name_to_number() using player_choice
 
 def rpsls(player_choice):
 	print " "
 	print "Player chooses" + player_choice
-
-	player_choice(name_to_number)
-    # convert the player's choice to player_number using the function name_to_number()
-
-    # compute random guess for comp_number using random.randrange()
-
-    # convert comp_number to comp_choice using the function number_to_name()
+	name_to_number(player_choice)
+# compute random guess for comp_number using random.randrange()
+	comp_number = random.randrange(0,4)
+# convert comp_number to comp_choice using the function number_to_name()
     
-    # print out the message for computer's choice
+# print out the message for computer's choice
 
-    # compute difference of comp_number and player_number modulo five
+# compute difference of comp_number and player_number modulo five
 
-    # use if/elif/else to determine winner, print winner message
+# use if/elif/else to determine winner, print winner message
 
 rpsls("rock")
 rpsls("Spock")
