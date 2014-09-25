@@ -62,11 +62,11 @@ def rpsls(player_choice):
     difference = (name_to_number(player_choice) - comp_number) % 5
 # use if/elif/else to determine winner, print winner message
     if difference == 0:
-        result = "Player and computer tie!"
+        print "Player and computer tie!"
     elif difference == 1 or difference == 2:
-        result = "Player wins!"
+        print "Player wins!"
     else:
-        result = "Computer wins!"
+        print "Computer wins!"
 
 rpsls("rock")
 rpsls("Spock")
