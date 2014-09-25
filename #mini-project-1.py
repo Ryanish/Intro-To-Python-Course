@@ -35,14 +35,16 @@ def rpsls(player_choice):
 	print "Player chooses" + player_choice
 	name_to_number(player_choice)
 # compute random guess for comp_number using random.randrange()
-	comp_number = random.randrange(0,4)
+def	comp_number = random.randrange(0,4)
 # convert comp_number to comp_choice using the function number_to_name()
-    
+def comp_choice = comp_number(number_to_name())
 # print out the message for computer's choice
-
+print comp_choice()
 # compute difference of comp_number and player_number modulo five
-
+comp_number % player_number 5
 # use if/elif/else to determine winner, print winner message
+
+if 
 
 rpsls("rock")
 rpsls("Spock")
