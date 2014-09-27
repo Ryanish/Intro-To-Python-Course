@@ -1,4 +1,4 @@
-Intro-To-Python-Course
+An Introduction to Interactive Programming in Python
 ======================
 
-Coursera Course
+This reposisitory is designed to show other users how I approached the challenges of the projects that are assessed by fellow Coursera students.
