@@ -30,11 +30,11 @@ def range1000():
     pass
     
 def input_guess(guess):
-    # main game logic goes here	
-    global = operand
-    operand = int(guess) #?
-    print "Guess was" + guess
-    output()
+    # main game logic goes here 
+#    global = operand
+#    operand = int(guess) #?
+#    print "Guess was" + guess
+#    output()
     # remove this when you add your code
     pass
 
@@ -46,9 +46,9 @@ def input_guess(guess):
 frame = simplegui.create_frame("Guess the number game", 250, 175)
 
 # register event handlers for control elements and start frame
-frame.add_button("Range is (0, 100" + range100 + 200)
-frame.add_button("Range is (0, 1000" + range1000 + 200)
-frame.add_input("input field" + input_guess + 200)
+frame.add_button("Range is (0, 100", range100, 200)
+frame.add_button("Range is (0, 1000", range1000, 200)
+frame.add_input("input field", input_guess, 200)
 
 
 # call new_game 
