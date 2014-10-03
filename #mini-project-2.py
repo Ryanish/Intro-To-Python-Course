@@ -7,14 +7,15 @@ import random
 import math
 
 #initialised Globals
-number_range = 100
+number_range = (0, 101)
+
+#3. Add code to the function new_game that initializes a global variable secret_number to be a random number in the range [0, 100). Remember to include a global statement. Hint: look at the functions in the random module to figure out how to easily select such a random number. Note that the call to new_game() at the bottom of the template ensures that secret_number is always initialized when the program starts running.
 
 # helper function to start and restart the game
 def new_game():
     # initialize global variables used in your code here
+    secret_number = random.randrange(0,101)
 
-    # remove this when you add your code    
-    pass
 
 # define event handlers for control panel
 def range100():
@@ -44,14 +45,8 @@ frame.add_button("Range is (0, 100", range100, 200)
 frame.add_button("Range is (0, 1000", range1000, 200)
 frame.add_input("input field", input_guess, 200)
 
-
-#3. Add code to the function new_game that initializes a global variable secret_number to be a random number in the range [0, 100). Remember to include a global statement. Hint: look at the functions in the random module to figure out how to easily select such a random number. Note that the call to new_game() at the bottom of the template ensures that secret_number is always initialized when the program starts running.
-
-#When discussing ranges, we will follow the standard Python convention of including the low end of the range and excluding the high end of the range, which can be expressed mathematically as [low, high). So, [0, 3) means all of the numbers starting at 0 up to, but not including 3. In other words 0, 1, and 2. We suggest using the range [0, 100) in your first implementation.
-
 # call new_game 
 new_game()
-
 
 # always remember to check your completed program against the grading rubric
 
