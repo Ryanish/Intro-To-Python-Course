@@ -29,7 +29,7 @@ def timer_handler():
     
 # define draw handler
 def draw_handler(canvas):
-    canvas.draw_text("insert here", (80, 50), 20, 'White')
+    canvas.draw_text("it needs to go here", (80, 50), 20, 'White')
     
 # create frame
 frame = simplegui.create_frame("Stopwatch", 250, 175)
@@ -45,6 +45,10 @@ timer = simplegui.create_timer(1000, timer_handler)
 
 
 # start frame
-
-
-# Please remember to review the grading rubric
+"""
+Write the event handler function for the canvas that 
+draws the current time (simply as an integer, you
+should not worry about formatting it yet) in the middle
+of the canvas. Remember that you will need to convert the 
+current time into a string using str before drawing it.
+"""
